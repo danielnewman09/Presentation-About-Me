@@ -34,6 +34,8 @@
 		<div class="reveal">
 			<div class="slides">
 
+        <section>
+
         <section> <!-- Title Slide -->
             <br>
             <br>
@@ -48,271 +50,179 @@
             </p>
         </section>
 
-        <!-- Introduction Material -->
-        <section>
-            <section> <!-- Demonstration-->
-                <div class="slide">
-                <h2 class="header">Real-Time Tool Health Inference</h2>
-                <iframe width="90%" height="90%" src="https://www.youtube.com/embed/xmu2ci3WxWs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </section>
+        <section> <!-- Demonstration-->
+            <div class="slide">
+            <h2 class="header">Real-Time Tool Health Inference</h2>
+            <iframe width="90%" height="90%" src="https://www.youtube.com/embed/xmu2ci3WxWs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
 
-            <section> <!-- Research Questions -->
-                <div class="slide">
-                    <h2 class="header">My Undergraduate Experience</h2>
-                    <img src="Figures/Daniel-Senior-BS.jpg" class="right_image">
-                    <div class="left_text">
-                        <ul>
-                            <li class="fragment fade-up">Attended the University of Louisiana at Lafayette (2011-2015)</li>
-
-                            <li class="fragment fade-up">Graduated with a B.S. in Mechanical Engineering</li>
-
-                            <li class="fragment fade-up">Worked multiple internships at local, small consulting firms</li>
-
-                            <li class="fragment fade-up">A year post-graduation, I hadn't found a decent full-time job, so I enrolled in grad school</li>
-                        </ul>
-                    </div>
-                    
-                </div>
-            </section>
-
-            <section> <!-- Research Questions -->
-                <div class="slide">
-                    <h2 class="header">Master's Degree</h2>
-                    <div class="center_text">
-                        <ul>
-                            <li class="fragment fade-up">Enrolled in Grad School at ULL in Fall 2016</li>
-                            <li class="fragment fade-up">Reached out to my senior capstone advisor to join his lab</li>
-                            <li class="fragment fade-up">Completed M.S. in Spring 2018 with a focus in System Dynamics and Controls</li>
-                        </ul>
-                    </div>
-                    <img src="Figures/MCHE201.jpg" class="center_plot" style="width:50%">
-            
-                </div>
-            </section>
-
-            <section>
-                <h2 style="margin-top:-25px;margin-bottom:0;">M.S. Research: Input Shaping</h2>
-                <div style="position:relative; width:1280px; height:960px; margin: -2% auto;justify-content: center;">
-                      <img class="fragment fade-up" src="figures/shaping-process/reference.png" style="vertical-align:middle;border:0;position:absolute;left:0;top:0%;width:95%">
-                      <img class="plain fragment fade-up" src="figures/shaping-process/convolved-with.png" style="border:0;position:absolute;vertical-align:middle;left:0;width:95%">
-                      <img class="plain fragment fade-up" src="figures/shaping-process/input-shaper.png" style="border:0;position:absolute;vertical-align:middle;left:0;width:95%">
-                    <img class="plain fragment fade-up" src="figures/shaping-process/next.png" style="border:0;position:absolute;vertical-align:middle;left:0%;width:95%">
-                </div>
-                <div style="position:absolute;left:0px;top:60%;">
+        <section> <!-- Research Questions -->
+            <div class="slide">
+                <h2 class="header">My Undergraduate Experience</h2>
+                <img src="Figures/Daniel-Senior-BS.jpg" class="right_image">
+                <div class="left_text">
                     <ul>
-                        <li class="fragment fade-up">Input shaper design:</li>
-                        <ul>
-                            <li class="fragment fade-up">Natural frequency</li>
-                            <li class="fragment fade-up">Damping ratio</li>
-                            <li class="fragment fade-up">$\sum A_i = 1$</li>
-                        </ul>
+                        <li class="fragment fade-up">Attended the University of Louisiana at Lafayette (2011-2015)</li>
+                        <li class="fragment fade-up">Graduated with a B.S. in Mechanical Engineering</li>
+                        <li class="fragment fade-up">Worked multiple internships at local, small consulting firms</li>
+                        <li class="fragment fade-up">A year post-graduation, I hadn't found a decent full-time job, so I enrolled in grad school</li>
                     </ul>
                 </div>
-            </section>
-
-            <section> <!-- Demonstration-->
-                <div class="slide">
-                <h2 class="header">Crane Control with Input Shaping</h2>
-                <iframe width="90%" height="90%" src="Figures/crane_control.MP4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </section>
-
-            <section> <!-- Research Questions -->
-                <div class="slide">
-                    <h2 class="header">Ph.D.</h2>
-                    <div class="left_text">
-                        <ul>
-                            <li class="fragment fade-up">With my M.S. advisor's recommendation, I joined Georgia Tech in Fall 2018</li>
-                            <li class="fragment fade-up">Immediately joined Boeing-funded research on machine health monitoring</li>
-                            <li class="fragment fade-up">Completed my PhD in Summer 2020 and joined Boeing full-time</li>
-                        </ul>
-                    </div>
-                    <img src="Figures/Dissertation-Contribution-Overview/Overall.svg" class="right_image">
-            
-                </div>
-            </section>
-
+                
+            </div>
         </section>
 
-        <!-- Background -->
-        <section>
-
-
-            <section> <!-- Spectral Power Approximation -->
-                <div class="slide">
-                    <h2 class="header">Spectral Power Approximation</h2>
-                    <div class="center_text">
-                    <p>Discrete Fourier Transform:</p>
-                        \begin{equation}
-                        X[n] = \sum_{k=0}^{N-1} x[k] e^{-j \frac{2 \pi}{N} n k}
-                        \end{equation}
-                    </div>
-                    <img src="Figures/Bearing1_Spectrogram-Annotated.svg" class="center_plot" style="margin-top:2em;width:90%">
-                    <div class="footer">
-                        <img src="Presentation/css/chevron.png" class="footer">
-                        <h4 class="footer">Background</h4>
-                    </div>
-            </section>
+        <section> <!-- Research Questions -->
+            <div class="slide">
+                <h2 class="header">Master's Degree</h2>
+                <div class="center_text">
+                    <ul>
+                        <li class="fragment fade-up">Enrolled in Grad School at ULL in Fall 2016</li>
+                        <li class="fragment fade-up">Reached out to my senior capstone advisor to join his lab</li>
+                        <li class="fragment fade-up">Completed M.S. in Spring 2018 with a focus in System Dynamics and Controls</li>
+                    </ul>
+                </div>
+                <img src="Figures/MCHE201.jpg" class="center_plot" style="width:50%">
         
+            </div>
         </section>
 
-        <!-- Digital Architecture -->
         <section>
+            <h2 style="margin-top:-25px;margin-bottom:0;">M.S. Research: Input Shaping</h2>
+            <div style="position:relative; width:1280px; height:960px; margin: -2% auto;justify-content: center;">
+                    <img class="fragment fade-up" src="figures/shaping-process/reference.png" style="vertical-align:middle;border:0;position:absolute;left:0;top:0%;width:95%">
+                    <img class="plain fragment fade-up" src="figures/shaping-process/convolved-with.png" style="border:0;position:absolute;vertical-align:middle;left:0;width:95%">
+                    <img class="plain fragment fade-up" src="figures/shaping-process/input-shaper.png" style="border:0;position:absolute;vertical-align:middle;left:0;width:95%">
+                <img class="plain fragment fade-up" src="figures/shaping-process/next.png" style="border:0;position:absolute;vertical-align:middle;left:0%;width:95%">
+            </div>
+            <div style="position:absolute;left:0px;top:60%;">
+                <ul>
+                    <li class="fragment fade-up">Input shaper design:</li>
+                    <ul>
+                        <li class="fragment fade-up">Natural frequency</li>
+                        <li class="fragment fade-up">Damping ratio</li>
+                        <li class="fragment fade-up">$\sum A_i = 1$</li>
+                    </ul>
+                </ul>
+            </div>
+        </section>
 
-            <section> <!-- Contextual Data Acquisition -->
-                <div class="slide">
-                    <h2 class="header">Contextual Data Acquisition</h2>
-                        <img src="Figures/Contextual_Training.svg" class="left_image">
-                        <img src="Figures/Table_Example.svg" class="right_image">
-                    <div class="footer">
-                        <img src="Presentation/css/chevron.png" class="footer">
-                        <h4 class="footer">Architecture</h4>
-                    </div>
+        <section> <!-- Demonstration-->
+            <div class="slide">
+            <h2 class="header">Crane Control with Input Shaping</h2>
+            <iframe width="90%" height="90%" src="Figures/crane_control.MP4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section> <!-- Research Questions -->
+            <div class="slide">
+                <h2 class="header">Ph.D.: Vibration Analytics and Machine Health Monitoring</h2>
+                <div class="left_text">
+                    <ul>
+                        <li class="fragment fade-up">With my M.S. advisor's recommendation, I joined Georgia Tech in Fall 2018</li>
+                        <li class="fragment fade-up">Immediately joined Boeing-funded research on machine health monitoring</li>
+                        <li class="fragment fade-up">Completed my PhD in Summer 2020 and joined Boeing full-time</li>
+                    </ul>
                 </div>
-            </section>
+                <img src="Figures/Dissertation-Contribution-Overview/Overall.svg" class="right_image">
+            </div>
+        </section>
 
-            <!-- Test Dataset -->
-            <section> 
-                <div class="slide">
-                    <h2 class="header">Test Dataset</h2>
-                    <img src="Dissertation-Notebooks/Chapter-4/figures/Test_Signal.png" class="center_plot" style="margin-top:0em">
-                    <img src="Dissertation-Notebooks/Chapter-4/figures/Test_Signal_FFT.png" class="center_plot" style="margin-top:-1em">
-                    <div class="footer">
-                        <img src="Presentation/css/chevron.png" class="footer">
-                        <h4 class="footer">Edge-Deployable Tools</h4>
-                    </div>
+        <section> <!-- Research Questions -->
+            <div class="slide">
+                <h2 class="header">Post-Grad: Boeing Research & Technology</h2>
+                <div class="left_text">
+                    <ul>
+                        <li class="fragment fade-up">I'm working on a project to develop technologies which facilitate health monitoring using dynamical models</li>
+                        <li class="fragment fade-up">Also working with airline customers on vibration data to facilitate health monitoring for their fleet</li>
+                    </ul>
                 </div>
-            </section>
-
-            <!-- Feature Normalization -->
-            <section> 
-                <div class="slide">
-                    <h2 class="header">Feature Normalization</h2>
-                    <div class="full_text">
-                        <ul>
-                            <li>Convert logarithmic spectrum to linear features</li>
-                            <li>Use 1024-point spectrum as model input</li>
-                        </ul>
-                    </div>
-                    <img src="Dissertation-Notebooks/Chapter-4/figures/FFT_Log_Example.svg" class="left_image" style="height:60%;margin-top:2em">
-                    <img src="Dissertation-Notebooks/Chapter-4/figures/FFT_Norm_Example.svg" class="right_image" style="height:60%;margin-top:2em">
-                    <div class="footer">
-                        <img src="Presentation/css/chevron.png" class="footer">
-                        <h4 class="footer">Edge-Deployable Tools</h4>
-                    </div>
-                </div>
-            </section>
-
-            <section> <!-- Integrated Edge Device -->
-                <div class="slide">
-                    <h2 class="header">Integrated Edge Device</h2>
-                        <img src="Figures/Dissertation-Contribution-Overview/Edge-Device.svg" class="center_image">
-                    <div class="footer">
-                        <img src="Presentation/css/chevron.png" class="footer">
-                        <h4 class="footer">Integrated Edge Device</h4>
-                    </div>
-                </div>
-            </section>
-
-            <section> <!-- Edge Device Diagram-->
-                <div class="slide">
-                    <h2 class="header">Analog Data Acquisition</h2>
-                    <img src="Figures/Integrated_Edge_Device.svg" class="center_image">
-                    <div class="footer">
-                        <img src="Presentation/css/chevron.png" class="footer">
-                        <h4 class="footer">Integrated Edge Device</h4>
-                    </div>
-                </div>
-            </section>
-
-            <section> <!-- Case Study: Tool Wear Classification -->
-                <div class="slide">
-                    <h2 class="header">Case Study: Tool Wear Classification</h2>
-                    <img src="Figures/Dissertation-Contribution-Overview/Overall.svg" class="center_image">
-                    <div class="footer">
-                        <img src="Presentation/css/chevron.png" class="footer">
-                        <h4 class="footer">Case Study: Tool Wear Classification</h4>
-                    </div>
-                </div>
-            </section>
-
-            <section> <!-- Experimental Setup -->
-                <div class="slide">
-                    <h2 class="header">Experimental Setup</h2>
-                    <img src="Figures/Images_EMCO/Accelerometer-Zoom.jpeg" class="left_image">
-                    <img src="Figures/Images_EMCO/Accelerometer-Wide.jpeg" class="right_image">
-                    <div class="footer">
-                        <img src="Presentation/css/chevron.png" class="footer">
-                        <h4 class="footer">Case Study: Tool Wear Classification</h4>
-                    </div>
-                </div>
-            </section>
-
-            <section> <!-- Experimental Setup -->
-                <div class="slide">
-                    <h2 class="header">Experimental Setup</h2>
-                    <img src="Figures/Old-DAQ.png" class="left_image">
-                    <img src="Figures/Tool_Wear/Good_Bad_Presentation.svg" class="right_image">
-
-                    <!-- <img src="Figures/Images_EMCO/Accelerometer-Wide.jpeg" class="right_image"> -->
-                    <div class="footer">
-                        <img src="Presentation/css/chevron.png" class="footer">
-                        <h4 class="footer">Case Study: Tool Wear Classification</h4>
-                    </div>
-                </div>
-            </section>
-
-
-            <section> <!-- Experimental Parameters -->
-                <div class="slide">
-                    <h2 class="header">Experimental Parameters</h2>
-                    <img src="Figures/Experimental-Parameters.svg" class="center_image" style="height:25%;margin-top:2em">
-                    <div class="left_text" style="margin-top:2em;">
-                        <ul style="line-height:1.5;">
-                            <li class="fragment fade-up">Machining mild steel</li>
-                            <li class="fragment fade-up">Partial factorial design</li>
-                            <li class="fragment fade-up">Sample at 20kHz</li>
-                            <li class="fragment fade-up">4,200-sample length</li>
-                        </ul>     
-                    </div>
-                    <div class="footer">
-                        <img src="Presentation/css/chevron.png" class="footer">
-                        <h4 class="footer">Case Study: Tool Wear Classification</h4>
-                    </div>
-                </div>
-            </section>
+                <img src="Figures/Plane_Seattle.jpg" class="right_image">
         
-            <section> <!-- Sample Labeling -->
-                <div class="slide">
-                    <h2 class="header">Sample Labeling</h2>
-                    <img src="Figures/Edge_Layer.svg" class="center_image" style="height:60%;top:25%">
-                    <div class="footer">
-                        <img src="Presentation/css/chevron.png" class="footer">
-                        <h4 class="footer">Case Study: Tool Wear Classification</h4>
-                    </div>
-                </div>
-            </section>
+            </div>
+        </section>
 
-            <section> <!-- Experimental Spectrogram -->
-                <div class="slide">
-                    <h2 class="header">Experimental Spectrogram</h2>
-                    <img src="Figures/Experiment-Spectrogram.svg" class="center_image">
-                    <div class="footer">
-                        <img src="Presentation/css/chevron.png" class="footer">
-                        <h4 class="footer">Case Study: Tool Wear Classification</h4>
-                    </div>
+        <section> <!-- Title Slide -->
+            <div class="slide">
+            <h2 style="text-align:center;margin-top:25%">Case Study: Real-Time Health Monitoring using Vibratoin</h2>
+            </div>
+        </section>
+
+        <section> <!-- Demonstration-->
+            <div class="slide">
+            <h2 class="header">Real-Time Tool Health Inference</h2>
+            <iframe width="90%" height="90%" src="https://www.youtube.com/embed/xmu2ci3WxWs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section> <!-- Experimental Setup -->
+            <div class="slide">
+                <h2 class="header">Experimental Setup</h2>
+                <img src="Figures/Images_EMCO/Accelerometer-Zoom.jpeg" class="left_image">
+                <img src="Figures/Images_EMCO/Accelerometer-Wide.jpeg" class="right_image">
+            </div>
+        </section>
+
+        <section> <!-- Experimental Setup -->
+            <div class="slide">
+                <h2 class="header">Experimental Setup</h2>
+                <img src="Figures/Old-DAQ.png" class="left_image">
+                <img src="Figures/Tool_Wear/Good_Bad_Presentation.svg" class="right_image">
+            </div>
+        </section>
+
+        <section> <!-- Edge Device Diagram-->
+            <div class="slide">
+                <h2 class="header">Analog Data Acquisition</h2>
+                <img src="Figures/Integrated_Edge_Device.svg" class="center_image">
+            </div>
+        </section>
+
+        <section> <!-- Experimental Parameters -->
+            <div class="slide">
+                <h2 class="header">Experimental Parameters</h2>
+                <img src="Figures/Experimental-Parameters.svg" class="center_image" style="height:25%;margin-top:2em">
+                <div class="left_text" style="margin-top:2em;">
+                    <ul style="line-height:1.5;">
+                        <li class="fragment fade-up">Machining mild steel</li>
+                        <li class="fragment fade-up">Partial factorial design</li>
+                        <li class="fragment fade-up">Sample at 20kHz</li>
+                        <li class="fragment fade-up">4,200-sample length</li>
+                    </ul>     
                 </div>
-            </section>
+            </div>
+        </section>
+
+        <section> <!-- Experimental Spectrogram -->
+            <div class="slide">
+                <h2 class="header">Experimental Spectrogram</h2>
+                <img src="Figures/Experiment-Spectrogram.svg" class="center_image">
+            </div>
+        </section>
 
             <section> <!-- Experimental Spectrogram - Annotated -->
                 <div class="slide">
                     <h2 class="header">Experimental Spectrogram</h2>
                     <img src="Figures/Experiment-Spectrogram-Annotated.svg" class="center_image">
-                    <div class="footer">
-                        <img src="Presentation/css/chevron.png" class="footer">
-                        <h4 class="footer">Case Study: Tool Wear Classification</h4>
-                    </div>
+                </div>
+            </section>
+            
+            <!-- Frequency-Domain Results -->
+            <section> 
+                <div class="slide">
+                    <h2 class="header">Frequency-Domain Results</h2>
+                        <img src="Dissertation-Notebooks/Chapter-3/figures/Emco_Nominal_vs_Anomalous_FFT.svg" class="center_plot" style="margin-top:0em;">
+                        <img src="Dissertation-Notebooks/Chapter-3/figures/Emco_Nominal_vs_Anomalous_FFT_Diff.svg" class="center_plot">
+                </div>
+            </section>
+
+            <!-- Frequency-Domain Results -->
+            <section> 
+                <div class="slide">
+                    <h2 class="header">Accelerometer Calibration</h2>
+                        <img src="Figures/Accel_Calibration/Sensitivity_Y.png" class="center_plot" style="margin-top:0em;">
+                        <img src="Figures/Accel_Calibration/Phase_Y.png" class="center_plot">
                 </div>
             </section>
 
@@ -327,10 +237,6 @@
                         </ul>   
                     </div>
                     <img src="Figures/Experimental-Breakdown.svg" class="center_image" style="height:20%">
-                    <div class="footer">
-                        <img src="Presentation/css/chevron.png" class="footer">
-                        <h4 class="footer">Case Study: Tool Wear Classification</h4>
-                    </div>
                 </div>
             </section>
         
@@ -355,10 +261,6 @@
                             <li>Maximize:<br> $J = F^2_{1,train} + F^2_{1,test}$</li>
                         </ul>
                     </div>
-                    <div class="footer">
-                        <img src="Presentation/css/chevron.png" class="footer">
-                        <h4 class="footer">Case Study: Tool Wear Classification</h4>
-                    </div>
                 </div>
             </section>
 
@@ -366,10 +268,6 @@
                 <div class="slide">
                     <h2 class="header">Hyperparameter Optimization</h2>
                     <img src="Figures/noDoE_Scores_Presentation.svg" style="vertical-align:middle;border:0;width:100%">
-                    <div class="footer">
-                        <img src="Presentation/css/chevron.png" class="footer">
-                        <h4 class="footer">Case Study: Tool Wear Classification</h4>
-                    </div>
                 </div>
             </section>
 
@@ -384,10 +282,6 @@
                     </div>
                     <img src="Figures/Model-Validation-Chapter6.svg" class="right_image" style="top:20%;width:50%">
                     <img src="Figures/BBB-DAQ.png" class="left_image" style="margin-top:0em">
-                    <div class="footer">
-                        <img src="Presentation/css/chevron.png" class="footer">
-                        <h4 class="footer">Case Study: Tool Wear Classification</h4>
-                    </div>
                 </div>
             </section>
 
@@ -395,11 +289,6 @@
                 <div class="slide">
                     <h2 class="header">Model Performance: Validation</h2>
                     <img src="Dissertation-Notebooks/Chapter-6/figures/classification-compare-v1.svg" class="center_plot" style="margin-top:0em">
-                    
-                    <div class="footer">
-                        <img src="Presentation/css/chevron.png" class="footer">
-                        <h4 class="footer">Case Study: Tool Wear Classification</h4>
-                    </div>
                 </div>
             </section>
 
@@ -414,10 +303,6 @@
                     </div>
                     <img src="Dissertation-Notebooks/Chapter-6/figures/R-Good.svg" class="left_image" style="height:60%;margin-top:2em">
                     <img src="Dissertation-Notebooks/Chapter-6/figures/R-Bad.svg" class="right_image" style="height:60%;margin-top:2em">
-                    <div class="footer">
-                        <img src="Presentation/css/chevron.png" class="footer">
-                        <h4 class="footer">Case Study: Tool Wear Classification</h4>
-                    </div>
                 </div>
             </section>
 
@@ -426,106 +311,41 @@
                     <h2 class="header">Control Chart Analysis: Mean</h2>
                     <img src="Dissertation-Notebooks/Chapter-6/figures/X-Good.svg" class="left_image" style="height:60%;">
                     <img src="Dissertation-Notebooks/Chapter-6/figures/X-Bad.svg" class="right_image" style="height:60%;">
-                    <div class="footer">
-                        <img src="Presentation/css/chevron.png" class="footer">
-                        <h4 class="footer">Case Study: Tool Wear Classification</h4>
-                    </div>
                 </div>
             </section>
 
         <section> <!-- Title Slide -->
             <div class="slide">
-            <h2 style="text-align:center;margin-top:25%">Conclusion</h2>
+            <h2 style="text-align:center;margin-top:25%">Summary</h2>
             </div>
         </section>
 
-            <section> <!-- Research Questions -->
-                <div class="slide">
-                    <h2 class="header">Research Questions</h2>
-                    <div class="full_text">
+        <section> <!-- Research Questions -->
+            <div class="slide">
+                <h2 class="header">Thoughts from Post-Grad</h2>
+                <div class="full_text">
+                    <ul>
+                        <li class="fragment fade-up">Don't expect to get things right the first time around</li>
+                        <li class="fragment fade-up">If you know you want to pursue grad school, reach out to a professor or grad students you know</li>
+                        <li class="fragment fade-up">Don't spend too much time comparing yourself to your peers. Just do the best <i>you</i> can</li>
+                        <li class="fragment fade-up">Learn to write <i>good</i> code</li>
                         <ul>
-                            <li class="fragment fade-up">Developed a data acquisition and transmission strategy for machine health monitoring</li>
-
-                            <li class="fragment fade-up">Presented a case study which used Scikit-Learn to predict tool health</li>
-
-                            <li class="fragment fade-up">Showed that embedded computing can be used for:</li>
-                            <ul>
-                                <li class="fragment fade-up">Vibration data acquisition</li>
-                                <li class="fragment fade-up">Feature extraction and preprocessing</li>
-                                <li class="fragment fade-up">Machine learning inference</li>
-                            </ul>
-                            <li class="fragment fade-up">Embedded system performance on par with cloud computing</li>
+                            <li class="fragment fade-up"><a href="https://www.pyimagesearch.com">Pyimagesearch.com</a></li>
+                            <li class="fragment fade-up"><a href="https://coreyms.com/">Corey Schafer</a></li>
                         </ul>
-                    </div>
-                    <div class="footer">
-                        <img src="Presentation/css/chevron.png" class="footer">
-                        <h4 class="footer">Conclusion</h4>
-                    </div>
+                        <li class="fragment fade-up">Learn how to use Git/Github</li>
+                    </ul>
                 </div>
-            </section>
-
-            <section> <!-- Title Slide -->
-                <div class="slide">
-                <h2 style="text-align:center;margin-top:25%">Thank You</h2>
-                </div>
-            </section>
-
+            </div>
         </section>
 
+        <section> <!-- Title Slide -->
+            <div class="slide">
+            <h2 style="text-align:center;margin-top:25%">Thank You</h2>
+            </div>
+        </section>
         <!-- Supplementary Slides -->
-
-        <section>
-
-            <section> <!-- Title Slide -->
-                <div class="slide">
-                <h2 style="text-align:center;margin-top:25%">Supplementary Slides</h2>
-                </div>
-            </section>
-
-            <section> <!-- Model Performance: Validation -->
-                <div class="slide">
-                    <h2 class="header">Model Performance: Validation</h2>
-                    <img src="Dissertation-Notebooks/Chapter-6/figures/classification-compare-v2.svg" class="center_plot" style="margin-top:0em">
-                    
-                    <div class="footer">
-                        <img src="Presentation/css/chevron.png" class="footer">
-                        <h4 class="footer">Case Study: Tool Wear Classification</h4>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Frequency-Domain Results -->
-            <section> 
-                <div class="slide">
-                    <h2 class="header">Accelerometer Calibration</h2>
-                        <img src="Figures/Accel_Calibration/Sensitivity_Y.png" class="center_plot" style="margin-top:0em;">
-                        <img src="Figures/Accel_Calibration/Phase_Y.png" class="center_plot">
-                    <div class="footer">
-                        <img src="Presentation/css/chevron.png" class="footer">
-                        <h4 class="footer">Supplementary Slides</h4>
-                    </div>
-                </div>
-            </section>
-            
-
-
-            <!-- Frequency-Domain Results -->
-            <section> 
-                <div class="slide">
-                    <h2 class="header">Frequency-Domain Results</h2>
-                        <img src="Dissertation-Notebooks/Chapter-3/figures/Emco_Nominal_vs_Anomalous_FFT.svg" class="center_plot" style="margin-top:0em;">
-                        <img src="Dissertation-Notebooks/Chapter-3/figures/Emco_Nominal_vs_Anomalous_FFT_Diff.svg" class="center_plot">
-                    <div class="footer">
-                        <img src="Presentation/css/chevron.png" class="footer">
-                        <h4 class="footer">Supplementary Slides</h4>
-                    </div>
-                </div>
-            </section>
-
-
         </section>
-
-        
 
 
     <script src="Presentation/js/reveal.js"></script>
@@ -562,7 +382,7 @@
 
             pdfSeparateFragments: false,
 
-            fragments: true,
+            fragments: false,
 
             slideNumber: 'c/t',
 
@@ -582,12 +402,6 @@
             Reveal.configure({center: true});
         }, false );
 
-        // You can provide a function to fully customize the number:
-        Reveal.configure({ slideNumber: function() {
-        // Ignore numbering of vertical slides
-        return [ Reveal.getSlidePastCount() + '/48'];
-        // return [ Reveal.getIndices().f  + '.' + Reveal.getIndices().v + '/' ];
-        }});
     </script>
 
 
